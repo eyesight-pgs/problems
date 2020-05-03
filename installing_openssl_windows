@@ -1,0 +1,30 @@
+Date: 2020-05-03 [As time passes this solution becomes more obsolate]
+
+Problem: How to install OpenSSL on Windows?
+
+Solution:
+	Note: This solution was working correctly on
+		date: 2020-05-03
+		os: Windows 10 x64
+
+	Installing OpenSSL
+		Run the following command with administrative previlages
+			choco install openssl -pre -y
+		This will install openssl on C:\Program Files\OpenSSL-Win64
+		Folder structure:
+		C:
+		|- Program Files
+			|- OpenSSL-Win64
+				|- bin (Add to env: Path)
+				|- include (Add to env INCLUDE)
+				|- lib (Add to env LIB)
+
+
+	Updating user environmental variables:
+	  [append] Path: C:\Program Files\OpenSSL-Win64\bin
+	  [create] LIB: C:\Program Files\OpenSSL-Win64\lib
+	  [create] INCLUDE: C:\Program Files\OpenSSL-Win64\include
+
+	Extra:
+		To refresh env within powershell
+			refreshenv
