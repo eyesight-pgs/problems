@@ -1,0 +1,12 @@
+Date: 2020-05-05
+
+Problem: Creating shortcut for windows env window
+
+Solution:
+	Create a new shortcut file from rightclick menu.
+	Add the folowing content as target:
+		C:\Windows\System32\rundll32.exe sysdm.cpl,EditEnvironmentVariables
+
+Note:
+	It did not allow to edit system env.
+	But user env can be edited
