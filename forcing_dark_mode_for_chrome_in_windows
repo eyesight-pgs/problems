@@ -1,0 +1,9 @@
+Date: 2020-05-05
+
+Problem: Force dark mode for chrome on windows
+
+Solution:
+	Create a shortcut with following target:
+		"<path to chrome>" -force-dark-mode
+		
+		Example: "C:\Users\<user name>\AppData\Local\Google\Chrome SxS\Application\chrome.exe" -force-dark-mode
