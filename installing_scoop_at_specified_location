@@ -1,0 +1,15 @@
+Date: 2020-05-17
+
+Problem: How to install scoop at specified location?
+Note: By default scoop is install in C:\User\<user name>\scoop
+
+Solution:
+	Open powershell
+	run:
+		$env:SCOOP = '<location where you want to install scoop>'
+		ex:
+			$env:SCOOP = 'E:\app\scoop'
+	run:
+		Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+		Note: the above command is taken from official scoop site: https://scoop.sh
+		
